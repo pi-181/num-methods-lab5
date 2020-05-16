@@ -16,7 +16,7 @@ public class LinearInterpolation implements Interpolation {
 
         var calculated = func.value(x);
         return "Результат: " + calculated + "\n" +
-                "Похибка: " + (calculated - function.applyAsDouble(x));
+                "Похибка: " + (function.applyAsDouble(x) - calculated);
     }
 
 }

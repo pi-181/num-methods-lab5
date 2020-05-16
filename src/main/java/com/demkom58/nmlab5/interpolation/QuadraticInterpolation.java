@@ -19,7 +19,7 @@ public class QuadraticInterpolation implements Interpolation {
 
         final double result = splineFunc.value(x);
         return "Результат: " + result + "\n" +
-                "Похибка: " + (result - function.applyAsDouble(x));
+                "Похибка: " + (function.applyAsDouble(x) - result);
     }
 
 }

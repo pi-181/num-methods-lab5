@@ -26,7 +26,7 @@ public class LagrangeInterpolation implements Interpolation {
         }
 
         return "Результат: " + sum + "\n" +
-                "Похибка: " + (sum - function.applyAsDouble(x));
+                "Похибка: " + (function.applyAsDouble(x) - sum);
     }
 
 }
