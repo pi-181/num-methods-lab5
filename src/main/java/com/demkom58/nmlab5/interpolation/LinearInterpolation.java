@@ -15,7 +15,8 @@ public class LinearInterpolation implements Interpolation {
         var func = interpolator.interpolate(points.getKey(), points.getValue());
 
         var calculated = func.value(x);
-        return "Результат: " + calculated;
+        return "Результат: " + calculated + "\n" +
+                "Похибка: " + (calculated - function.applyAsDouble(x));
     }
 
 }

@@ -18,7 +18,8 @@ public class QuadraticInterpolation implements Interpolation {
             throw new IllegalArgumentException("Вказана помилкова точка");
 
         final double result = splineFunc.value(x);
-        return "Результат: " + result;
+        return "Результат: " + result + "\n" +
+                "Похибка: " + (result - function.applyAsDouble(x));
     }
 
 }
